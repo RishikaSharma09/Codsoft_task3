@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container" id="calculator">
+        <div class="display">
+            <input type="text" id="display" readonly>    
+        </div>
+        <div class="calc1">
+            <input type="button" value="C" class="blue-button" onclick="cleardisplay()">              
+            <input type="button" value="<-" class="blue-button" onclick="solve('<-')">
+            <input type="button" value="sq" class="blue-button" onclick="solve('sq')">
+            <input type="button" value="/" class="blue-button" onclick="solve('/')">
+        </div>
+
+        <div class="calc2">
+            <input type="button" value="9" onclick="solve('9')">
+            <input type="button" value="8" onclick="solve('8')">
+            <input type="button" value="7" onclick="solve('7')">
+            <input type="button" value="*" class="blue-button" onclick="solve('*')">
+        </div>
+
+        <div class="calc3">
+            <input type="button" value="6" onclick="solve('6')">
+            <input type="button" value="5" onclick="solve('5')">
+            <input type="button" value="4" onclick="solve('4')">
+            <input type="button" value="+" class="blue-button" onclick="solve('+')">
+        </div>
+
+        <div class="calc4">
+            <input type="button" value="3" onclick="solve('3')">
+            <input type="button" value="2" onclick="solve('2')">
+            <input type="button" value="1" onclick="solve('1')">
+            <input type="button" value="-" class="blue-button" onclick="solve('-')">
+        </div>
+
+        <div class="calc5">
+            <input type="button" value="0" onclick="solve('0')">
+            <input type="button" value="00" onclick="solve('00')">
+            <input type="button" value="." onclick="solve('.')">
+            <input type="button" value="^" class="blue-button" onclick="solve('^')">
+        </div>
+
+        <div class="calc6">
+            <input type="button" value="=" onclick="solve('=')">
+        </div>
+    </div>
+    <script src ="calc.js"></script>
+</body>
+</html>
